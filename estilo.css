@@ -8,14 +8,14 @@ body, h1, h2, p {
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    color: #333;
+    color: #aa3737;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #df7171;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -57,7 +57,7 @@ section h2 {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
+    background-color:#aa3737;
     color: #fff;
 }
 
