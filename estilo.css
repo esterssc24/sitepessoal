@@ -1,72 +1,75 @@
-
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #aa3737;
-    line-height: 1.6;
+    background-color: black;
+    color: white; /* Define a cor do texto para branco para melhor legibilidade */
     margin: 0;
     padding: 0;
+    height: 100%; 
 }
 
+.conteudo-home {
+    width: 300px; /* Preenche a largura da janela de visualização */
+    height: 200px; /* Preenche a altura da janela de visualização */
+    background-color: #000; /* Cor de fundo preta (opcional) */
+    color: #fff; /* Cor do texto (opcional) */
+}
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    padding: 15px; /* Adiciona espaço interno ao container */
+    background-color: black; /* Define o fundo como preto */
+    color: white; /* Define a cor do texto como branco para melhor legibilidade */
+    border: 5px solid black; /* Adiciona uma borda ao container (opcional) */
+}
+
+
+.imagem {
+    max-width: 40%; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Adiciona espaço à direita da imagem */
+}
+
+.texto {
+    flex-grow: 1; /* Ocupa todo o espaço disponível restante */
+}
+
+.texto p {
+    font-size: 200px; /* Define o tamanho da fonte do texto */
+}
+
+.container p {
+    font-size: 200px; /* Define o tamanho da fonte do texto */
+    color: #333; /* Define a cor do texto */
+}
+/* Estilização básica para a barra de navegação */
 header {
-    background-color: #df7171;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    color: white; /* Cor do texto da barra de navegação */
+    padding: 10px 0; /* Espaçamento interno na barra de navegação */
+}
+/* Estilo padrão para telas maiores */
+.header {
+    font-size: 24px;
 }
 
-header h1 {
-    font-size: 2em;
+/* Estilo para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    .header {
+        font-size: 18px;
+    }
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Exibir itens de navegação em linha */
+    margin-right: 20px; /* Espaçamento entre os itens de navegação */
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para as seções */
-section {
-    padding: 40px;
-}
-
-section h2 {
-    font-size: 1.5em;
-}
-
-/* Estilos para o rodapé */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color:#aa3737;
-    color: #fff;
-}
-
-/* Estilos para links */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: white; /* Cor dos links na barra de navegação */
 }
