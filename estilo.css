@@ -20,6 +20,7 @@ body {
     color: white; /* Define a cor do texto como branco para melhor legibilidade */
     border: 5px solid black; /* Adiciona uma borda ao container (opcional) */
     box-sizing: border-box;
+  
 }
 
 
@@ -31,15 +32,27 @@ body {
 
 .texto {
     flex-grow: 1; /* Ocupa todo o espaço disponível restante */
+    
 }
 
 .texto p {
-    font-size: 150px; /* Define o tamanho da fonte do texto */
+    font-size: 125px; /* Define o tamanho da fonte do texto */
 }
 
 .container p {
     font-size: 100px; /* Define o tamanho da fonte do texto */
     color: #333; /* Define a cor do texto */
+    text-align: right;
+    margin-right: 10px;
+
+}
+.container h1 {
+
+    font-size: 100px; /* Define o tamanho da fonte do texto */
+    color: #333; /* Define a cor do texto */
+    text-align: right;
+    margin-right: 10px;
+
 }
 /* Estilização básica para a barra de navegação */
 header {
@@ -79,11 +92,13 @@ header {
     color: white; /* Cor dos links na barra de navegação */
 }
 
+
+
 .slideshow-container {
     width: 800px; /* Defina a largura do container */
     position: absolute;
-    left: 0; /* Posiciona o container à esquerda */
-    top: 50%; /* Ajusta a posição verticalmente */
+    left: 10; /* Posiciona o container à esquerda */
+    top: 55%; /* Ajusta a posição verticalmente */
     transform: translateY(-50%); /* Centraliza verticalmente */
     overflow: hidden;
 }
@@ -119,3 +134,4 @@ img {
         opacity: 0;
     }
 }
+
