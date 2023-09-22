@@ -28,6 +28,8 @@ body {
     max-width: 40%; /* Define a largura máxima da imagem */
     height: a; /* Mantém a proporção da imagem */
     margin-right: 20px; /* Adiciona espaço à direita da imagem */
+    border-radius: 10px;
+   
 }
 
 .texto {
@@ -101,6 +103,7 @@ header {
     top: 55%; /* Ajusta a posição verticalmente */
     transform: translateY(-50%); /* Centraliza verticalmente */
     overflow: hidden;
+    
 }
 
 .slide {
@@ -111,6 +114,7 @@ header {
 
 img {
     width: 50%;
+    border-radius: 10px;
 }
 
 .fade {
