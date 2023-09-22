@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    color: white; /* Define a cor do texto para branco para melhor legibilidade */
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+.conteudo-home {
+    width: 100%; /* Preenche a largura da janela de visualização */
+    height: 100vh; /* Preenche a altura da janela de visualização */
+    background-color: #000; /* Cor de fundo preta (opcional) */
+    color: #fff; /* Cor do texto (opcional) */
+}
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    padding: 20px; /* Adiciona espaço interno ao container */
+    background-color: black; /* Define o fundo como preto */
+    color: white; /* Define a cor do texto como branco para melhor legibilidade */
+    border: 5px solid black; /* Adiciona uma borda ao container (opcional) */
+    box-sizing: border-box;
+  
+}
+
+
+.imagem {
+    max-width: 40%; /* Define a largura máxima da imagem */
+    height: a; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Adiciona espaço à direita da imagem */
+    border-radius: 10px;
+   
+}
+
+.texto {
+    flex-grow: 1; /* Ocupa todo o espaço disponível restante */
+    
+}
+
+.texto p {
+    font-size: 125px; /* Define o tamanho da fonte do texto */
+}
+
+.container p {
+    font-size: 100px; /* Define o tamanho da fonte do texto */
+    color: #333; /* Define a cor do texto */
+    text-align: right;
+    margin-right: 10px;
+
+}
+.container h1 {
+
+    font-size: 100px; /* Define o tamanho da fonte do texto */
+    color: #333; /* Define a cor do texto */
+    text-align: right;
+    margin-right: 10px;
+
+}
+/* Estilização básica para a barra de navegação */
+header {
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    color: white; /* Cor do texto da barra de navegação */
+    padding: 10px 0; /* Espaçamento interno na barra de navegação */
+}
+/* Estilo padrão para telas maiores */
+.header {
+    font-size: 24px;
+}
+
+/* Estilo para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    .header {
+        font-size: 18px;
+    }
+}
+
+.menu {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.menu ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline; /* Exibir itens de navegação em linha */
+    margin-right: 20px; /* Espaçamento entre os itens de navegação */
+}
+
+.menu a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: white; /* Cor dos links na barra de navegação */
+}
+
+
+
+.slideshow-container {
+    width: 800px; /* Defina a largura do container */
+    position: absolute;
+    left: 10; /* Posiciona o container à esquerda */
+    top: 55%; /* Ajusta a posição verticalmente */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    overflow: hidden;
+    
+}
+
+.slide {
+    width: 100%;
+    display: inline-block;
+    transition: transform 1s ease-in-out;
+}
+
+img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
