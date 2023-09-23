@@ -1,10 +1,66 @@
 body {
-    background-color: black;
+    
+    background-image:linear-gradient(45deg, #2D4356, #435B66, #A76F6F,#EAB2A0);
+    background-size: 500% 100%;
+    animation: degrade-animado 3s infinite alternate;
     color: white; /* Define a cor do texto para branco para melhor legibilidade */
     margin: 0;
-    padding: 0;
-    height: 100%; 
+    padding: 90px;
+    height:100vh; 
 }
+@keyframes degrade-animado{
+    0%{
+    background-position-x: 0%;
+    }
+    100%{
+        background-position-x:100% ;
+    }
+}
+nav {
+    height: 90px;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    top: 0;
+    position: fixed;
+    left: 0; /* Deixe o valor de 'left' como 0 */
+    right: 0; /* Adicione 'right' como 0 para estender o menu até a borda direita */
+    text-align: center;
+}
+
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins' , sans-serif;
+    color: aliceblue;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+}
+a:hover{
+    color: #333;
+}
+a:hover::after{
+    width: 100%;
+
+}
+
 
 .conteudo-home {
     width: 100%; /* Preenche a largura da janela de visualização */
@@ -14,22 +70,24 @@ body {
 }
 .container {
     display: flex;
-    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
-    padding: 20px; /* Adiciona espaço interno ao container */
-    background-color: black; /* Define o fundo como preto */
-    color: white; /* Define a cor do texto como branco para melhor legibilidade */
-    border: 5px solid black; /* Adiciona uma borda ao container (opcional) */
+
+    align-items: center;
+    padding: 20px;
+    
+    color: white;
+    
     box-sizing: border-box;
-  
+    height: 70vh; /* Define a altura como 100% da altura da janela */
 }
 
 
+
 .imagem {
-    max-width: 40%; /* Define a largura máxima da imagem */
+    max-width: 35%; /* Define a largura máxima da imagem */
     height: a; /* Mantém a proporção da imagem */
     margin-right: 20px; /* Adiciona espaço à direita da imagem */
-    border-radius: 10px;
-   
+    border-radius: 60px;
+    width: 100%;
 }
 
 .texto {
@@ -58,7 +116,7 @@ body {
 }
 /* Estilização básica para a barra de navegação */
 header {
-    background-color: #333; /* Cor de fundo da barra de navegação */
+    background-color: #050505; /* Cor de fundo da barra de navegação */
     color: white; /* Cor do texto da barra de navegação */
     padding: 10px 0; /* Espaçamento interno na barra de navegação */
 }
@@ -100,7 +158,7 @@ header {
     width: 800px; /* Defina a largura do container */
     position: absolute;
     left: 10; /* Posiciona o container à esquerda */
-    top: 55%; /* Ajusta a posição verticalmente */
+    top: 70%; /* Ajusta a posição verticalmente */
     transform: translateY(-50%); /* Centraliza verticalmente */
     overflow: hidden;
     
@@ -110,11 +168,15 @@ header {
     width: 100%;
     display: inline-block;
     transition: transform 1s ease-in-out;
+    position: relative;
+    top: 40px;
+    
 }
 
 img {
     width: 70%;
     border-radius: 10px;
+
 }
 
 .fade {
@@ -138,4 +200,3 @@ img {
         opacity: 0;
     }
 }
-
