@@ -7,6 +7,10 @@ body {
     margin: 0;
     padding: 90px;
     height:100vh; 
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+
 }
 @keyframes degrade-animado{
     0%{
@@ -45,7 +49,7 @@ a {
 a::after{
     content: "";
     position: absolute;
-    background-color: aqua;
+    background-color: #EAB2A0 ;
     height: 3px;
     width: 0;
     left: 0;
@@ -98,21 +102,26 @@ a:hover::after{
 .texto p {
     font-size: 125px; /* Define o tamanho da fonte do texto */
 }
-
-.container p {
-    font-size: 100px; /* Define o tamanho da fonte do texto */
-    color: #333; /* Define a cor do texto */
-    text-align: right;
-    margin-right: 10px;
-
+.container h2 {
+    font-size: 18px;
+    color: #faf4f4;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 500px;
+    font-family: 'Poppins', sans-serif;
+   
 }
+
 .container h1 {
-
-    font-size: 100px; /* Define o tamanho da fonte do texto */
-    color: #333; /* Define a cor do texto */
-    text-align: right;
-    margin-right: 10px;
-
+    font-size: 50px;
+    color: #333;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 500px;
+    font-family: 'Kalam', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    white-space: nowrap;
 }
 /* Estilização básica para a barra de navegação */
 header {
