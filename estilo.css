@@ -3,7 +3,7 @@ body {
     background-image:linear-gradient(45deg, #2D4356, #435B66, #A76F6F,#EAB2A0);
     background-size: 500% 100%;
     animation: degrade-animado 3s infinite alternate;
-    color: white; /* Define a cor do texto para branco para melhor legibilidade */
+    color: rgb(125, 128, 107); /* Define a cor do texto para branco para melhor legibilidade */
     margin: 0;
     padding: 90px;
     height:100vh; 
@@ -94,7 +94,7 @@ a:hover::after{
     width: 200%;
 }
 
-.texto {
+.texto-home {
     flex-grow: 1; /* Ocupa todo o espaço disponível restante */
     
 }
@@ -110,7 +110,9 @@ a:hover::after{
     margin-right: 10px;
 
 }
-.container h1 {
+
+
+.titulo-home {
 
     font-size: 100px; /* Define o tamanho da fonte do texto */
     color: #ece8e8; /* Define a cor do texto */
@@ -120,6 +122,67 @@ a:hover::after{
     font-family: 'Poppins', sans-serif;
 
 }
+
+.texto-slide {
+    font-size: 18px;
+    color: #faf4f4;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto1 {
+        font-size: 50px;
+        color: #333;
+        text-align: left;
+        margin-right: auto;
+        margin-left: 500px;
+        font-family: 'Kalam', cursive;
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 4px 4px 4px #aaa;
+    }
+    .texto-slide2 {
+        font-size: 18px;
+        color: #faf4f4;
+        text-align: left;
+        margin-right: auto;
+        margin-left:100px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .texto-slide3 {
+        font-size: 18px;
+        color: #faf4f4;
+        text-align: left;
+        margin-right: auto;
+        margin-left: 500px;
+        font-family: 'Poppins', sans-serif;
+       
+    }
+    
+    .texto2 {
+        font-size: 50px;
+        color: #333;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Kalam', cursive;
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 4px 4px 4px #aaa;
+        white-space: nowrap;
+    }
+    .texto3 {
+    font-size: 50px;
+    color: #333;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 500px;
+    font-family: 'Kalam', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    white-space: nowrap;
+}
+    
 /* Estilização básica para a barra de navegação */
 header {
     background-color: #050505; /* Cor de fundo da barra de navegação */
@@ -170,16 +233,37 @@ header {
     
 }
 
+.slide-show1 {
+    width: 700px; /* Defina a largura do container */
+    position: absolute;
+    left: 10; /* Posiciona o container à esquerda */
+    top: 55%; /* Ajusta a posição verticalmente */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    overflow: hidden;
+    
+}
+
 .slide {
     width: 100%;
     display: inline-block;
     transition: transform 1s ease-in-out;
 }
 
-img {
-    width: 50%;
+.img1 {
+    width: 45%;
     border-radius: 10px;
 }
+
+.img2 {
+    width: 65%;
+    border-radius: 10px;
+}
+
+.legenda {
+ font-size: 25px
+
+}
+
 
 .fade {
     animation-name: fade;
